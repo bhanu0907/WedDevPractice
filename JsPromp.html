@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function pop_alert()
+{
+var a=window.alert("click on ok\n working or not");
+}
+function pop_comfirm()
+{
+var b=window.confirm('select yes or not');
+if (b==true) {
+    document.write("you have clicked yes");
+}
+else{
+    document.write("You hav clicked no")
+}
+
+}
+
+function pop_prompt()
+
+{
+var c=prompt('enter your age C');
+var d=prompt('enter your age D');
+if (c!=null && c!="") {
+    document.write("your age is:"+c);
+}
+else{
+    document.write("enter your age");
+}
+document.write('<br>');
+//by default prompt popup takes string value
+document.write(c+d);
+}
+</script>
+</head>
+<body>
+<form>
+    <input type="submit" onclick="pop_alert()" value="alertPopUp" name="alert">
+    <input type="submit" onclick="pop_comfirm()" value="comfirmPopup" name="alert">
+    <input type="submit" onclick="pop_prompt()" value="promptpopup" name="alert">
+</form>
+</body>
+</html>
